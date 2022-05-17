@@ -1,0 +1,25 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#logo {
+  display: flex;
+}
+
+#header-nav {
+  display: flex;
+  justify-self: end;
+}
+
+#nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.footer-section {
+  text-align: center;
+}
