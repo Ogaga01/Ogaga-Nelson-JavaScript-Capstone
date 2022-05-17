@@ -1,2 +1,2 @@
 import './styles.css';
-import './assets/OD-image.png';
+import img from './assets/OD-image.png';
