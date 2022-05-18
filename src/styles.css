@@ -37,10 +37,9 @@ header {
   justify-content: space-around;
   gap: 20px;
   font-size: 1.5rem;
-  font-weight: 2rem;
+  cursor: pointer;
   color: #967843;
   margin-right: 45px;
-
 }
 
 footer {
@@ -54,4 +53,3 @@ footer {
   font-size: 20px;
   text-align: center;
 }
-
