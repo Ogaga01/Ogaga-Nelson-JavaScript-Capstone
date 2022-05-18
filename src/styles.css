@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: #6D6970;
 }
 
 header {
@@ -45,6 +46,7 @@ header {
 footer {
   text-align: start;
   background-color: black;
+  margin-top: 10px;
 }
 
 .footer-section {
@@ -54,26 +56,27 @@ footer {
 }
 
 #art-container {
-  background-color: #6D6970;
   display: flex;
   flex-wrap: wrap;
   margin-top: 84px;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .article-style {
-  width: 30%;
+  width: 31.5%;
   height: 100vh;
   margin-top: 10px;
-  background-color: #171E41;
-  border: 3px solid black;
+  background-color: black;
+  border: 3px solid #0F1429;
   gap: 5px;
   
 }
 
 .image-style {
-  height: 25rem;
-  width: 20rem;
+  height: 32rem;
+  width: 26.4rem;
   align-self: center;
-  padding-left: 5%;
+  margin-left: 5%;
+  margin-top: 25px;
+  border: 5px solid #967843;
 }
