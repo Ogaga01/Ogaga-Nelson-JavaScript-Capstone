@@ -44,7 +44,6 @@ header {
 
 footer {
   text-align: start;
-  margin-top: 100px;
   background-color: black;
 }
 
@@ -52,4 +51,29 @@ footer {
   color: #967843;
   font-size: 20px;
   text-align: center;
+}
+
+#art-container {
+  background-color: #6D6970;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 84px;
+  justify-content: space-around;
+}
+
+.article-style {
+  width: 30%;
+  height: 100vh;
+  margin-top: 10px;
+  background-color: #171E41;
+  border: 3px solid black;
+  gap: 5px;
+  
+}
+
+.image-style {
+  height: 25rem;
+  width: 20rem;
+  align-self: center;
+  padding-left: 5%;
 }

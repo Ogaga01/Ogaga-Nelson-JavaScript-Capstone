@@ -9,7 +9,7 @@ const artContent = document.createElement('div');
 
 let images = [];
 
-const baseUrl = 'https://api.artic.edu/api/v1/artworks?limit=16';
+const baseUrl = 'https://api.artic.edu/api/v1/artworks?limit=15';
 const getImages = async () => {
   const response = await fetch(baseUrl);
   const data = await response.json();
