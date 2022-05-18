@@ -37,3 +37,15 @@ const getImages = async () => {
            <span class="like-count">
           
            </span>
+           <img class="comment" id="${img.id}" src="/src/comment.png" alt="comment icon">&nbsp;<span class="comment-count">Comments</span>
+           </figcaption>
+         </figure>
+       </article>`).join('');
+     artContainer.innerHTML = imageString;
+     artContainer.appendChild(artContent);
+   };
+   
+   window.onload = () => {
+     getImages();
+   // updateLikes();
+   };
