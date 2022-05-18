@@ -24,11 +24,12 @@ const getImages = async () => {
 
   const imageString = images.map((img) => `
   <article class="article-style">
+   <img class="image-style" src="https://www.artic.edu/iiif/2/${img.image_id}/full/843,/0/default.jpg"
+       alt="image of artwork">
      <h2 class="title">${img.title},
        ${img.date}</h2>
      <h3 class="artist">${img.artist}</h3>
-     <img class="image-style" src="https://www.artic.edu/iiif/2/${img.image_id}/full/843,/0/default.jpg"
-       alt="image of artwork">
+    
      <figure class="caption-container">
        <figcaption class="caption-content">
          <img class="like" id="${img.id}" src="/src/heart-empty.png" alt="like icon">&nbsp;
