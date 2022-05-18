@@ -4,14 +4,12 @@ import img from './assets/OD-image.png';
 const logo = document.getElementById('logo1');
 logo.src = img;
 
-document.querySelector('#logo_img').setAttribute('src', logo);
-
 const artContainer = document.getElementById('art-container');
 const artContent = document.createElement('div');
 
 let images = [];
 
-const baseUrl = 'https://api.artic.edu/api/v1/artworks?limit=15';
+const baseUrl = 'https://api.artic.edu/api/v1/artworks?limit=16';
 const getImages = async () => {
   const response = await fetch(baseUrl);
   const data = await response.json();
@@ -24,7 +22,7 @@ const getImages = async () => {
     artist: image.artist_title,
   })).filter((image) => image.image_id !== null && image.artist !== null);
 
-  const imageString = images.map((img, index) => `
+  const imageString = images.map((img) => `
   <article class="article-style">
      <h2 class="title">${img.title},
        ${img.date}</h2>
@@ -41,11 +39,11 @@ const getImages = async () => {
            </figcaption>
          </figure>
        </article>`).join('');
-     artContainer.innerHTML = imageString;
-     artContainer.appendChild(artContent);
-   };
-   
-   window.onload = () => {
-     getImages();
-   // updateLikes();
-   };
+  artContainer.innerHTML = imageString;
+  artContainer.appendChild(artContent);
+};
+
+window.onload = () => {
+  getImages();
+  // updateLikes();
+};
