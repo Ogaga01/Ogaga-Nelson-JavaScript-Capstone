@@ -1,5 +1,7 @@
 import './styles.css';
 import img from './assets/OD-image.png';
+import comment from './assets/comment.png';
+import heartEmpty from './assets/heart.png';
 
 const logo = document.getElementById('logo1');
 logo.src = img;
@@ -9,7 +11,7 @@ const artContent = document.createElement('div');
 
 let images = [];
 
-const baseUrl = 'https://api.artic.edu/api/v1/artworks?limit=16';
+const baseUrl = 'https://api.artic.edu/api/v1/artworks?limit=15';
 const getImages = async () => {
   const response = await fetch(baseUrl);
   const data = await response.json();
@@ -32,11 +34,11 @@ const getImages = async () => {
     
      <figure class="caption-container">
        <figcaption class="caption-content">
-         <img class="like" id="${img.id}" src="/src/heart-empty.png" alt="like icon">&nbsp;
+         <img class="like" id="${img.id}" src="${heartEmpty}" alt="like icon">&nbsp;
            <span class="like-count">
           
            </span>
-           <img class="comment" id="${img.id}" src="/src/comment.png" alt="comment icon">&nbsp;<span class="comment-count">Comments</span>
+           <img class="comment" id="${img.id}" src="${comment}" alt="comment icon">&nbsp;<span class="comment-count">Comments</span>
            </figcaption>
          </figure>
        </article>`).join('');
