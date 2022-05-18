@@ -1,7 +1,7 @@
 import './styles.css';
 import img from './assets/OD-image.png';
 import comment from './assets/comment.png';
-import heartEmpty from './assets/heart.png'
+import heartEmpty from './assets/heart.png';
 
 const logo = document.getElementById('logo1');
 logo.src = img;

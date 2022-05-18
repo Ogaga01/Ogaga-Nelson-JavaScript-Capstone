@@ -4,7 +4,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #6D6970;
+  background-color: #6d6970;
 }
 
 header {
@@ -67,9 +67,8 @@ footer {
   height: 110vh;
   margin-top: 10px;
   background-color: black;
-  border: 3px solid #0F1429;
+  border: 3px solid #0f1429;
   gap: 5px;
-  
 }
 
 .image-style {
@@ -81,7 +80,8 @@ footer {
   border: 5px solid #967843;
 }
 
-.title, .artist {
+.title,
+.artist {
   color: #967843;
   text-align: center;
 }
