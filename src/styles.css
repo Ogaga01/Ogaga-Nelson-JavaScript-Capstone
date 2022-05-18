@@ -88,4 +88,10 @@ footer {
 
 .comment-count {
   color: #fff;
+  margin-left: -180px;
+}
+
+figcaption {
+  display: flex;
+  justify-content: space-between;
 }
