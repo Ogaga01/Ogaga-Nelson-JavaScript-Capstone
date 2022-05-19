@@ -37,6 +37,21 @@ const updateLikes = async () => {
       updateLikes();
     });
   };
+
+  const getLikeElements = () => {
+    const hearts = document.querySelectorAll('.like');
+    const likeCounter = document.querySelectorAll('.like-count');
+    hearts.forEach((heart, index) => {
+      let counter = 0;
+      heart.addEventListener('click', (e) => {
+        e.preventDefault();
+        like(images[index].id);
+        counter += 1;
+        likeCounter[index].innerHTML = `${likes[index] + counter} Likes`;
+      });
+    });
+  };
+
   
  
 
