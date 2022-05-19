@@ -9,7 +9,21 @@ logo.src = img;
 const artContainer = document.getElementById('art-container');
 const artContent = document.createElement('div');
 
+const likes = [];
 let images = [];
+
+const updateLikes = async () => {
+    const appID = 'NY2YXaf6kAE8tAIQDCPo';
+    await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appID}/likes`)
+      .then((response) => response.json())
+      .then((data) => {
+        data.forEach((article) => {
+          likes.push(article.likes);
+        });
+      });
+  };
+  
+ 
 
 const baseUrl = 'https://api.artic.edu/api/v1/artworks?limit=15';
 const getImages = async () => {
@@ -23,8 +37,8 @@ const getImages = async () => {
     date: image.date_start,
     artist: image.artist_title,
   })).filter((image) => image.image_id !== null && image.artist !== null);
-
-  const imageString = images.map((img) => `
+  
+  const imageString = images.map((img, index) =>  `
   <article class="article-style">
    <img class="image-style" src="https://www.artic.edu/iiif/2/${img.image_id}/full/843,/0/default.jpg"
        alt="image of artwork">
@@ -36,7 +50,7 @@ const getImages = async () => {
        <figcaption class="caption-content">
          <img class="like" id="${img.id}" src="${heartEmpty}" alt="like icon">&nbsp;
            <span class="like-count">
-          
+           ${likes[index]} Likes
            </span>
            <img class="comment" id="${img.id}" src="${comment}" alt="comment icon">&nbsp;<span class="comment-count">Comments</span>
            </figcaption>
@@ -44,9 +58,13 @@ const getImages = async () => {
        </article>`).join('');
   artContainer.innerHTML = imageString;
   artContainer.appendChild(artContent);
+  getLikeElements();
 };
 
 window.onload = () => {
-  getImages();
-  // updateLikes();
+    updateLikes();
+  getLikeElements()
+  
+  setTimeout(() => getImages(), 2000);
+  ;
 };
