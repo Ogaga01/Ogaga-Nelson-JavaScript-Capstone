@@ -86,7 +86,8 @@ footer {
   text-align: center;
 }
 
-.comment-count {
+.comment-count,
+.like-count {
   color: #fff;
   margin-left: -180px;
 }
