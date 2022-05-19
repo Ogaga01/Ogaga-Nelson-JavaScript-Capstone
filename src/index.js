@@ -22,6 +22,21 @@ const updateLikes = async () => {
         });
       });
   };
+
+  const like = async (id) => {
+    const appID = 'NY2YXaf6kAE8tAIQDCPo';
+    await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appID}/likes`, {
+      method: 'Post',
+      headers: {
+        'content-type': 'application/json; charset=UTF-8',
+      },
+      body: JSON.stringify({
+        item_id: id,
+      }),
+    }).then(() => {
+      updateLikes();
+    });
+  };
   
  
 
