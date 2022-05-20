@@ -97,15 +97,15 @@ const likesList = () => {
 };
 
 const commentList = () => {
-  const comments =  [   
+  const comments = [
     {
-    "username": "Jane",
-    "comment": "Hello",
-    "creation_date": "2022-05-18"
+      username: 'Jane',
+      comment: 'Hello',
+      creation_date: '2022-05-18',
     },
 
-    ]
-    return comments
-}
+  ];
+  return comments;
+};
 
-export {likesList, commentList}
+export { likesList, commentList };

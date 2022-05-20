@@ -149,13 +149,10 @@ figcaption {
   justify-content: space-between;
 }
 
-.text-lg{
-  color: #fff;
-}
-.comments-counter{
+.text-lg {
   color: #fff;
 }
 
-
-
-
+.comments-counter {
+  color: #fff;
+}
