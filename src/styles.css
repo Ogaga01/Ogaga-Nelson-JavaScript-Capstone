@@ -84,7 +84,7 @@ footer {
   border: 5px solid #967843;
 }
 
-/* .bg-popup {
+.bg-popup {
   width: 60%;
   background-color: lightblue;
   position: fixed;
@@ -131,7 +131,7 @@ button {
   font-size: x-large;
   cursor: pointer;
   margin-left: 500px;
-} */
+}
 
 .title,
 .artist {
