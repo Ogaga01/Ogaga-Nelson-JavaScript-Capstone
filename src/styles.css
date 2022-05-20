@@ -9,7 +9,6 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
   background-color: black;
   position: fixed;
   width: 100%;
@@ -17,6 +16,7 @@ header {
 
 #logo {
   display: flex;
+  margin-left: 400px;
 }
 
 #logo1 {
@@ -29,14 +29,13 @@ header {
 
 #header-nav {
   display: flex;
-  justify-self: end;
+  justify-content: space-around;
 }
 
 #nav-list {
   display: flex;
   list-style: none;
-  justify-content: space-between;
-  gap: 300px;
+  gap: 50px;
   font-size: 1.5rem;
   cursor: pointer;
   color: #967843;
@@ -115,6 +114,7 @@ textarea {
   padding-left: 50px;
   padding-right: 50px;
   border-radius: 30px;
+  height: 25px;
 }
 
 button {
