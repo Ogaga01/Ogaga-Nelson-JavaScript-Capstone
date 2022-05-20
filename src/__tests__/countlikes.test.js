@@ -1,5 +1,5 @@
 import likesList from '../__mocks__/fetchAPI.js';
-import countLike from '../modules/countlikes.js'
+import countLike from '../modules/countlikes.js';
 
 test('count likes for certain item', () => {
   const likes = likesList();
