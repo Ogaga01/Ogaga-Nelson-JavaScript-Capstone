@@ -1,5 +1,5 @@
-import { commentList } from '../__mocks__/fetchApi.js';
-import countComments from '../modules/countComments.js';
+import { commentList } from '../__mocks__/fetch-api.js';
+import countComments from '../modules/countcomments.js';
 
 test('count comments', () => {
   const comments = commentList();
