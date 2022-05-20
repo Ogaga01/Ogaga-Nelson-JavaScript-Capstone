@@ -86,23 +86,26 @@ footer {
 
 .bg-popup {
   width: 60%;
-  background-color: lightblue;
+  background-color: #0f1429d1;
   position: fixed;
-  top: 0;
+  align-self: center;
   text-align: center;
-  left: 0;
-  scroll-behavior: auto;
+  margin-top: 25px;
+  height: 90vh;
   overflow-y: auto;
+  border: 5px solid #967843;
 }
 
 .bg-popup img {
   width: 50%;
+  height: 25rem;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-top: 5px;
 }
 
 input,
@@ -123,10 +126,10 @@ button {
 
 #closeIcon {
   text-align: end;
-  color: brown;
+  color: #fff;
   font-size: x-large;
   cursor: pointer;
-  margin-left: 500px;
+  margin-left: 90%;
 }
 
 .title,
@@ -145,3 +148,12 @@ figcaption {
   display: flex;
   justify-content: space-between;
 }
+
+.text-lg{
+  color: #fff;
+}
+.comments-counter{
+  color: #fff;
+}
+
+
