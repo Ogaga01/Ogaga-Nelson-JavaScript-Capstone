@@ -2,7 +2,7 @@
 
 > This  Oga-Dela Arts Gallery  website which displays different Arts and users can like and comment on any art  All data is preserved thanks to the external [Art Institute of Chicago](https://api.artic.edu/docs/).
 
-![Screenshot 2022-05-13 110839](Oga-dela.png)
+![Oga-dela](https://user-images.githubusercontent.com/38649067/169528669-d019c751-faf0-4591-8433-f92763973cad.png)
 
 
 Additional description about the project and its features.
@@ -23,7 +23,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://ogaga01.github.io/Ogaga-Nelson-JavaScript-Capstone/) 
+[Live Demo Link](https://ogaga01.github.io/Ogaga-Nelson-JavaScript-Capstone/dist) 
 ## Getting Started
 
 You can directly clone this repo and run the following.
@@ -90,7 +90,7 @@ You can review more detail about the API here: [involvement API Docs](https://ww
 👤 **Ogaga Iyara**
 
 - GitHub: [Ogaga01](https://github.com/Ogaga01)
-- Twitter: [i_ogaga_n)](https://twitter.com/i_ogaga_n)
+- Twitter: [i_ogaga_n](https://twitter.com/i_ogaga_n)
 - LinkedIn: [i_ogaga_n](https://www.linkedin.com/in/ogaga-iyara-0339b0105/)
 
 👤 **Mandela Tumukunde**
