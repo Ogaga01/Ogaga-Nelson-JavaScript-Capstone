@@ -1,6 +1,5 @@
 import './styles.css';
 import img from './assets/OD-image.png';
-import comment from './assets/comment.png';
 import heartEmpty from './assets/heart.png';
 
 const logo = document.getElementById('logo1');
@@ -27,7 +26,7 @@ const message = (text) => {
 const renderComment = (arr) => {
   const commentContainer = document.querySelector('.comments-container');
   commentContainer.innerHTML = '';
-  if (arr) {
+  if (Array.isArray(arr)) {
     arr.forEach((item) => {
       commentContainer.innerHTML += `
       <span class="bg-blue-400 p-2 mt-3 text-lg text-white mr-0">${item.creation_date}</span>
@@ -195,7 +194,7 @@ const getImages = async () => {
            <span class="like-count">
            ${likes[index]} Likes
            </span>
-           <img class="comment" id="${img.id}" src="${comment}" alt="comment icon">&nbsp;<span class="comment-count">Comments</span>
+           <button class="comment" id="${img.id}" class="comment-count" type="button">Comments</button>
            </figcaption>
          </figure>
        </article>`).join('');
