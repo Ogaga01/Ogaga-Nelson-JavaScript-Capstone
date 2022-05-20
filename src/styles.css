@@ -35,8 +35,8 @@ header {
 #nav-list {
   display: flex;
   list-style: none;
-  justify-content: space-around;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 300px;
   font-size: 1.5rem;
   cursor: pointer;
   color: #967843;
