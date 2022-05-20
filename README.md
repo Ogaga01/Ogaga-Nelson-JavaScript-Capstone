@@ -1,9 +1,8 @@
 # Oga-Dela Arts Gallery
 
-> This  Oga-Dela Arts Gallery  website which displays different Arts and users can like and comment on any art  All data is preserved thanks to the external [Art Institute of Chicago](https://api.artic.edu/docs/).
+> This Oga-Dela Arts Gallery website which displays different Arts and users can like and comment on any art All data is preserved thanks to the external [Art Institute of Chicago](https://api.artic.edu/docs/).
 
 ![Oga-dela](https://user-images.githubusercontent.com/38649067/169528669-d019c751-faf0-4591-8433-f92763973cad.png)
-
 
 Additional description about the project and its features.
 
@@ -13,17 +12,18 @@ Additional description about the project and its features.
 - CSS
 - JAVASCRIPT
 - NPM Webpacks
-- API
-- JEST 
+- APIs
+- JEST
 - BABEL
 
 ## Live Demo
 
-[Video documentation]() 
+[Video documentation]()
 
 ## Live Demo
 
-[Live Demo Link](https://ogaga01.github.io/Ogaga-Nelson-JavaScript-Capstone/dist) 
+[Live Demo Link](https://ogaga01.github.io/Ogaga-Nelson-JavaScript-Capstone/dist)
+
 ## Getting Started
 
 You can directly clone this repo and run the following.
@@ -69,6 +69,7 @@ npm run test
 - ...in your bash (assuming your in the root of this project);
 
 ## API Service
+
 The project is using two APIs:
 
 Art Institute of Chicago
@@ -112,8 +113,9 @@ Special thanks to the following contributors:
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
+
 - A big thank you to Microverse, for providing me the knowledge and tools [involvement API Docs](https://www.notion.so/microverse/Involvement-API-869e60b5ad104603aa6db59e08150270) to finish this project.
--An even bigger thank you for the creators of the  Art Institute of Chicago API which we use in this project: [Art Institute of Chicago](https://api.artic.edu/docs/)
+  -An even bigger thank you for the creators of the Art Institute of Chicago API which we use in this project: [Art Institute of Chicago](https://api.artic.edu/docs/)
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
