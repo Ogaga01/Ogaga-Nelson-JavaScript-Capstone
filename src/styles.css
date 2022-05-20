@@ -65,10 +65,14 @@ footer {
 .article-style {
   width: 31.5%;
   height: 100vh;
-  margin-top: 10px;
+  margin-top: 20px;
   background-color: black;
   border: 3px solid #0f1429;
   gap: 5px;
+}
+
+.hidden {
+  display: none;
 }
 
 .image-style {
@@ -78,6 +82,51 @@ footer {
   margin-left: 5%;
   margin-top: 25px;
   border: 5px solid #967843;
+}
+
+.bg-popup {
+  width: 60%;
+  background-color: lightblue;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  left: 0;
+  scroll-behavior: auto;
+  overflow-y: auto;
+}
+
+.bg-popup img {
+  width: 50%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea {
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 30px;
+}
+
+button {
+  margin: 0 auto;
+  padding: 7px;
+  background-color: #967843;
+  color: #fff;
+  border-radius: 16px;
+}
+
+#closeIcon {
+  text-align: end;
+  color: brown;
+  font-size: x-large;
+  cursor: pointer;
+  margin-left: 500px;
 }
 
 .title,
