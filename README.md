@@ -2,7 +2,7 @@
 
 > This Oga-Dela Arts Gallery website which displays different Arts and users can like and comment on any art All data is preserved thanks to the external [Art Institute of Chicago](https://api.artic.edu/docs/).
 
-![Oga-dela](https://user-images.githubusercontent.com/38649067/169528669-d019c751-faf0-4591-8433-f92763973cad.png)
+![Oga-dela](https://user-images.githubusercontent.com/38649067/169581810-cb92e986-eac0-4130-9007-7fbc0a6a9976.png)
 
 Additional description about the project and its features.
 
