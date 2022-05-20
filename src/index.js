@@ -14,6 +14,7 @@ const messageContainer = document.querySelector('.message');
 const commentsCounterParagraph = document.querySelector('.comments-counter');
 const grab = (e) => document.getElementById(e);
 
+const likes = [];
 let images = [];
 
 const message = (text) => {
@@ -125,6 +126,45 @@ const closePopup = () => {
     popupContainer.classList.add('hidden');
   });
 };
+const updateLikes = async () => {
+  const appID = 'NY2YXaf6kAE8tAIQDCPo';
+  await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appID}/likes`)
+    .then((response) => response.json())
+    .then((data) => {
+      data.forEach((article) => {
+        likes.push(article.likes);
+      });
+    });
+};
+
+const like = async (id) => {
+  const appID = 'NY2YXaf6kAE8tAIQDCPo';
+  await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appID}/likes/`, {
+    method: 'Post',
+    headers: {
+      'content-type': 'application/json; charset=UTF-8',
+    },
+    body: JSON.stringify({
+      item_id: id,
+    }),
+  }).then(() => {
+    updateLikes();
+  });
+};
+
+const getLikeElements = () => {
+  const hearts = document.querySelectorAll('.like');
+  const likeCounter = document.querySelectorAll('.like-count');
+  hearts.forEach((heart, index) => {
+    let counter = 0;
+    heart.addEventListener('click', (e) => {
+      e.preventDefault();
+      like(images[index].id);
+      counter += 1;
+      likeCounter[index].innerHTML = `${likes[index] + counter} Likes`;
+    });
+  });
+};
 
 const baseUrl = 'https://api.artic.edu/api/v1/artworks?limit=15';
 const getImages = async () => {
@@ -141,7 +181,7 @@ const getImages = async () => {
 
   const paintCounter = document.querySelector('.paint-counter');
   paintCounter.innerHTML = images.length;
-  const imageString = images.map((img) => `
+  const imageString = images.map((img, index) => `
   <article class="article-style">
    <img class="image-style" src="https://www.artic.edu/iiif/2/${img.image_id}/full/843,/0/default.jpg"
        alt="image of artwork">
@@ -153,7 +193,7 @@ const getImages = async () => {
        <figcaption class="caption-content">
          <img class="like" id="${img.id}" src="${heartEmpty}" alt="like icon">&nbsp;
            <span class="like-count">
-          
+           ${likes[index]} Likes
            </span>
            <img class="comment" id="${img.id}" src="${comment}" alt="comment icon">&nbsp;<span class="comment-count">Comments</span>
            </figcaption>
@@ -164,9 +204,11 @@ const getImages = async () => {
 
   openPopup(images);
   closePopup();
+  getLikeElements();
 };
 
 window.onload = () => {
-  getImages();
-  // updateLikes();
+//   getLikeElements();
+  updateLikes();
+  setTimeout(() => getImages(), 2000);
 };
