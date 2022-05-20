@@ -22,7 +22,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://ogaga01.github.io/Ogaga-Nelson-JavaScript-Capstone/dist)
+[Live Demo Link](https://ogaga01.github.io/Ogaga-Nelson-JavaScript-Capstone/dist/)
 
 ## Getting Started
 
