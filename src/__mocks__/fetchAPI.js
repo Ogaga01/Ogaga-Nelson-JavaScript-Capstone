@@ -96,4 +96,16 @@ const likesList = () => {
   return likes;
 };
 
-export default likesList;
+const commentList = () => {
+  const comments =  [   
+    {
+    "username": "Jane",
+    "comment": "Hello",
+    "creation_date": "2022-05-18"
+    },
+
+    ]
+    return comments
+}
+
+export {likesList, commentList}
