@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1653052518257" clover="3.2.0">
+  <project timestamp="1653052518257" name="All files">
+    <metrics statements="8" coveredstatements="7" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="3" elements="15" coveredelements="12" complexity="0" loc="8" ncloc="8" packages="1" files="2" classes="2"/>
+    <file name="countcomments.js" path="C:\Users\DELL LATITUDE\Desktop\Microverse\Module-2\Ogaga-Nelson-JavaScript-Capstone\src\modules\countcomments.js">
+      <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="cond" truecount="1" falsecount="1"/>
+    </file>
+    <file name="countlikes.js" path="C:\Users\DELL LATITUDE\Desktop\Microverse\Module-2\Ogaga-Nelson-JavaScript-Capstone\src\modules\countlikes.js">
+      <metrics statements="7" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="3" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
